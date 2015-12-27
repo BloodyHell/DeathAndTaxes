@@ -1,0 +1,25 @@
+You start with a village (later this can be a world with multiple villages but for now let's start with a village).
+
+This village has two types of buildings: Agriculture and production.
+
+Agriculture: Produces crude base goods like crops, animals, wood and minerals
+Production: Takes the crude goods that Agriculture produces and transforms them into products.
+
+
+How to determine which agriculture and production buildings are generated in a village?
+
+a) Set a baseline of population that is needed before a village can get a specific building
+    1) If the baseline of populace is reached, give each "tick" a change to build the building
+        I) Only if no other buildings are being built at that moment
+    2) Each building has a building time, and is not used before the building is build
+    3) Randomly select which building is built
+        I) If possible from a config file containing a list of buildings
+
+b) Based on the surroundings
+    !) Must implement the world and random resource generation, too much for now
+
+
+
+Glossary:
+
+"Tick": A tick is a not yet determined period of time.
